@@ -14,13 +14,14 @@ Aplikasi ini mencakup implementasi dari beberapa konsep dasar PHP, yaitu:
 ## Tampilan Aplikasi
 
 **Tampilan Awal Form**
-*(Letakkan screenshot tampilan form kosong di sini)*
-![Tampilan Form](link_ke_screenshot_anda.png)
+<img width="1918" height="1125" alt="Screenshot 2025-09-26 230251" src="https://github.com/user-attachments/assets/32d9616d-ffb5-404b-96e0-52b32e25be60" />
+
 
 **Tampilan Setelah Pendaftaran Berhasil**
-*(Letakkan screenshot tampilan setelah berhasil submit data di sini)*
-![Tampilan Sukses](link_ke_screenshot_anda_2.png)
+<img width="1919" height="1125" alt="Screenshot 2025-09-26 230437" src="https://github.com/user-attachments/assets/8c625010-6d27-4155-875e-549c13ead52e" />
+<img width="1919" height="1125" alt="Screenshot 2025-09-26 230523" src="https://github.com/user-attachments/assets/9955be95-1051-4b7b-ad43-5f25e0320eec" />
+
 
 **Contoh Pesan Error Validasi**
-*(Letakkan screenshot tampilan saat ada error validasi di sini)*
-![Tampilan Error](link_ke_screenshot_anda_3.png)
+<img width="1919" height="1125" alt="Screenshot 2025-09-26 230447" src="https://github.com/user-attachments/assets/6ba6d1e3-1562-4a1f-aa95-888776bcd942" />
+
