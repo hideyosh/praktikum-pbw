@@ -42,11 +42,11 @@ LaraPress merupakan blog sederhana yang dibangun dengan menggunakan Laravel 12 s
 
 Terdapat 3 Menu dalam pembelajaran kali ini:
 #### Menu Utama (Welcome Page)
-<img width="1918" height="1198" alt="Screenshot 2025-10-03 103552" src="/public/img/main-page.png" />
+<img width="1918" height="1198" alt="Screenshot 2025-10-03 103552" src="public/img/main-page.png" />
 #### Menu Tentang Kami (About)
-<img width="1918" height="1198" alt="Screenshot 2025-10-03 103552" src="/public/img/about-us.png" />
+<img width="1918" height="1198" alt="Screenshot 2025-10-03 103552" src="public/img/about-us.png" />
 #### Menu Kontak (Contact)
-<img width="1918" height="1198" alt="Screenshot 2025-10-03 103552" src="/public/img/kontak-kami.png" />
+<img width="1918" height="1198" alt="Screenshot 2025-10-03 103552" src="public/img/kontak-kami.png" />
 
 ## Fitur Yang  DiImplementasikan
 ### Halaman Utama
