@@ -1,72 +1,126 @@
-<!-- File: index.html -->
-<!doctype html>
-<html lang="id">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Beranda — Aplikasi Contoh</title>
-  <link rel="stylesheet" href="/styles.css">
+    <title>Selamat Datang di LaraPress</title>
+    @vite(['resources/css/main.css', 'resources/js/main.js'])
 </head>
 <body>
-  <header>
     <nav>
-      <a href="/">Beranda</a> |
-      <a href="/kontak/">Kontak</a>
+        <div class="logo">
+            LaraPress
+        </div>
+        <div class="nav-link">
+            <a href="{{ route('welcome') }}" class="{{ request()->routeIs('welcome') ? 'active' : '' }}">Home</a>
+            <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'active' : '' }}">Tentang Kami</a>
+            <a href="{{ route('kontak') }}" class="{{ request()->routeIs('kontak') ? 'active' : '' }}">Kontak</a>
+        </div>
     </nav>
-  </header>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
 
-  <main>
-    <h1>Selamat datang di Aplikasi Contoh</h1>
-    <p>Ini adalah halaman beranda. Gunakan navigasi di atas untuk menuju halaman lain.</p>
-  </main>
+        .container {
+            max-width: 75%;
+            margin: 40px auto;
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
 
-  <footer>
-    <p>&copy; 2025 Aplikasi Contoh</p>
-  </footer>
+        .col {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            width: 100%;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kontak Tim Kami</h1>
+        <div class="col">
+            <form action="#" method="post">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email kamu" required>
+
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" placeholder="Tulis pesan kamu..." required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+            <form action="#" method="post">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email kamu" required>
+
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" placeholder="Tulis pesan kamu..." required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
 
-
-<!-- File: kontak/index.html -->
-<!doctype html>
-<html lang="id">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Kontak — Aplikasi Contoh</title>
-  <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="/">Beranda</a> |
-      <a href="/kontak/">Kontak</a>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Kontak</h1>
-    <p>Berikut informasi kontak fiktif yang bisa kamu gunakan sebagai contoh:</p>
-
-    <ul>
-      <li><strong>Email:</strong> kontak@example.com</li>
-      <li><strong>Telepon:</strong> +62 812-3456-7890</li>
-      <li><strong>Alamat:</strong> Jl. Contoh No. 123, Yogyakarta</li>
-    </ul>
-
-    <p>Silakan hubungi kami jika ada pertanyaan (ini cuma contoh fiktif).</p>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Aplikasi Contoh</p>
-  </footer>
 </body>
 </html>
 
-
-<!-- File: styles.css (letakkan di folder root yang sama) -->
-body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 0; padding: 1.25rem; line-height: 1.5; }
-header { background: #f6f7fb; padding: 0.75rem 1rem; margin-bottom: 1rem; }
-nav a { text-decoration: none; color: #0b5cff; margin-right: 0.5rem; }
-main { max-width: 800px; margin: 0 auto; }
-footer { margin-to

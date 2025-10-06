@@ -12,4 +12,4 @@ Route::get('/tentang-kami', function () {
 
 Route::get('/kontak', function () {
     return view('kontak');
-});
+})->name('kontak');
