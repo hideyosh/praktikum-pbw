@@ -15,8 +15,10 @@
             <a href="{{ route('kontak') }}" class="{{ request()->routeIs('kontak') ? 'active' : '' }}">Kontak</a>
         </div>
     </nav>
-    <h1>Selamat Datang di Blog LaraPress</h1>
-    <p>Ini adalah halaman utama dari aplikasi blog kita.</p>
+    <div class="main">
+         <h1>Selamat Datang di Blog LaraPress</h1>
+        <p>Ini adalah halaman utama dari aplikasi blog kita.</p>
+    </div>
 </body>
 </html>
 

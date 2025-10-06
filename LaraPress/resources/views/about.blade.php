@@ -16,8 +16,10 @@
             <a href="{{ route('kontak') }}" class="{{ request()->routeIs('kontak') ? 'active' : '' }}">Kontak</a>
         </div>
     </nav>
-    <h1>Tentang LaraPress</h1>
-    <p>LaraPress adalah sebuah proyek blog sederhana yang dibuat untuk mempelajari dasar-dasar framework Laravel 12.</p>
+    <div class="main">
+         <h1>Tentang LaraPress</h1>
+        <p>LaraPress adalah sebuah proyek blog sederhana yang dibuat untuk mempelajari dasar-dasar framework Laravel 12.</p>
+    </div>
 </body>
 </html>
 

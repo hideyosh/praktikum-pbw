@@ -1,8 +1,8 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 ## Profile
-- Nama : Soja Purnamasari
-- NPM : 4523210104
+- Nama : Tri Anggoro Budi S
+- NPM  : 4523210108
 - Mata Kuliah : Prak. Pemrograman Berbasis Web (A)
 
 ## Tentang Praktikum Kedua
@@ -27,7 +27,7 @@ Instalasi dilakukan dengan memastikan hal dibawah ini sudah ada:
    laravel new LaraPress
 3. Konfigurasi Composer
    bash
-   cd example-app // untuk masuk ke directory projectnya
+   cd example-app 
    npm install && npm run build
    composer run dev
 5. Jalankan Server Laravel
@@ -35,16 +35,18 @@ Instalasi dilakukan dengan memastikan hal dibawah ini sudah ada:
    php artisan serve
 6. Optional Settings Code
    bash
-   code . // untuk membuka code
+   code . 
 
 ### Proyek LaraPress
 LaraPress merupakan blog sederhana yang dibangun dengan menggunakan Laravel 12 sebagai pembelajaran sederhana untuk tujuan pengembangan dan pembelajaran. LaraPress mendemonstrasikan konsep-konsep dasar Laravel seperti routing, views, dan struktur MVC.
 
 Terdapat 3 Menu dalam pembelajaran kali ini:
 #### Menu Utama (Welcome Page)
+<img width="1918" height="1198" alt="Screenshot 2025-10-03 103552" src="/public/img/main-page.png" />
 #### Menu Tentang Kami (About)
+<img width="1918" height="1198" alt="Screenshot 2025-10-03 103552" src="/public/img/about-us.png" />
 #### Menu Kontak (Contact)
-<img width="1918" height="1198" alt="Screenshot 2025-10-03 103552" src="https://github.com/user-attachments/assets/5acdfecc-538e-480d-a533-4f630b53bbf4" />
+<img width="1918" height="1198" alt="Screenshot 2025-10-03 103552" src="/public/img/kontak-kami.png" />
 
 ## Fitur Yang  DiImplementasikan
 ### Halaman Utama
@@ -85,7 +87,7 @@ Terdapat 3 Menu dalam pembelajaran kali ini:
                 <a href="/kontak"> Lihat Halaman Kontak</a>
     <br>
     <h3> Menu Kembali </h3>
-  <a href="/"> Kembali ke Halaman Utama</a> // Kembali ke menu utama
+  <a href="/"> Kembali ke Halaman Utama</a> 
 
 - resources/views/about.blade.php (*BARU*)  
   - File view baru untuk halaman *"Tentang Kami"*  
@@ -93,7 +95,7 @@ Terdapat 3 Menu dalam pembelajaran kali ini:
   - Menambahkan Menu Kembali pada about.blade.php dengan menggunakan:
     html
     <h3> Menu Kembali </h3>
-    <a href="/"> Kembali ke Halaman Utama</a> // Kembali ke menu utama
+    <a href="/"> Kembali ke Halaman Utama</a> 
 
 - `routes/web.php`  
   - Menambahkan route baru `/tentang-kami` yang mengarah ke view `about.blade.php`
@@ -104,7 +106,7 @@ Terdapat 3 Menu dalam pembelajaran kali ini:
   - - Menambahkan Menu Kembali pada `contact.blade.php` dengan menggunakan:
   - html
     <h3> Menu Kembali </h3>
-    <a href="/"> Kembali ke Halaman Utama</a> // Kembali ke menu utama
+    <a href="/"> Kembali ke Halaman Utama</a>
 
 - routes/web.php  
   - Menambahkan route baru /kontak yang mengarah ke view contact.blade.php  
@@ -241,9 +243,9 @@ html
 
 | Route      | Method | Deskripsi                              |
 |------------|--------|----------------------------------------|
-| /        | GET    | Halaman utama LaraPress                |
-| /about   | GET    | Halaman tentang LaraPress              |
-| /contact | GET    | Halaman tentang Kontak    LaraPress    |
+| /        | GET    | Halaman utama LaraPress                  |
+| /about   | GET    | Halaman tentang LaraPress                |
+| /contact | GET    | Halaman tentang Kontak LaraPress      |
 
 ---
 
